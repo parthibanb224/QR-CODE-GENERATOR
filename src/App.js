@@ -14,7 +14,7 @@ function App() {
 
   const generateQRCode = () => {
     fetch(
-      `http://api.qrserver.com/v1/create-qr-code/?data=${data}&size=${width}x${height}&format=${format}&color=${qrCodeColor}&bgcolor=${backgroundColor}`
+      `https://api.qrserver.com/v1/create-qr-code/?data=${data}&size=${width}x${height}&format=${format}&color=${qrCodeColor}&bgcolor=${backgroundColor}`
     )
       .then((response) => {
         if (!response.ok) {
