@@ -146,6 +146,7 @@ function App() {
           </div>
           <button
             type='submit'
+            style={{backgroundColor:"blue"}}
             className="bg-blue-500 text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-600 transition duration-300"
           >
             Generate QR Code
