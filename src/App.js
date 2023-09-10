@@ -20,9 +20,11 @@ function App() {
         if (!response.ok) {
           console.log('Network response was not ok');
         }
-        return response.url;
+        else{
+          setQRCodeUrl(response.url)
+        }
+        return true;
       })
-      .then((url) => setQRCodeUrl(url))
       .catch((error) => {
         console.log('Error generating QR code:', error);
       });
